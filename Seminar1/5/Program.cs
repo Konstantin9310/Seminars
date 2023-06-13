@@ -8,5 +8,5 @@
 
 Console.OutputEncoding = Encoding.UTF8;
 Console.Write("Введите трехзначное число");
-float n = Convert.ToInt32(Console.ReadLine());
+double n = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine(n % 10);
