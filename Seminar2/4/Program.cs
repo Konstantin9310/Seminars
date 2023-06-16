@@ -8,18 +8,21 @@
 161 -> да
 */
 
-void GetNumber()
+bool IsMultiplicity(int num)
 {
-    Console.Write(" Введите число ");
-    int num = Convert.ToInt32(Console.ReadLine());
+    
     if(num%7==0 && num%23 ==0)
     {
-        Console.Write(" кратное ");
+        return true;
     }
     else
     {
-        Console.WriteLine(" не кратное ");
-    }
+        return false;
+    }   
 
 }
-GetNumber();
+Console.Write(" Введите число ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+bool result = IsMultiplicity(num);
+Console.WriteLine(result);
